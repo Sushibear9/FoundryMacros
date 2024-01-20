@@ -24,3 +24,14 @@ canvas.animatePan({x: coords.x, y: coords.y, scale: coords.s, speed: 2000})
 
 
 
+//SetTo1in
+let gridSize = canvas.grid.size
+let targetScale = 1.09 / (gridSize/100)
+canvas.animatePan({x: canvas.stage.pivot.x, y: canvas.stage.pivot.y, scale: targetScale })
+
+
+
+//SetTo0.5in
+let gridSize = canvas.grid.size
+let targetScale = 1.09 / (gridSize/50)
+canvas.animatePan({x: canvas.stage.pivot.x, y: canvas.stage.pivot.y, scale: targetScale })
